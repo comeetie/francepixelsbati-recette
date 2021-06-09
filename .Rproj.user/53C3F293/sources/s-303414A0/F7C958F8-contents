@@ -1,0 +1,167 @@
+{
+    "pg_connection": {
+        "user": "comeetie",
+        "dbname": "bdtopo_bati",
+        "host": "localhost",
+        "password": "XXX"
+    },
+    "data_format": {
+        "geom_table": "gridgeom",
+        "geom_column": "wkb_geometry",
+        "row_column": "i",
+        "col_column": "j",
+        "context_variables": [
+ {
+  "name":"s_datecrea",
+  "aggregation":"SUM"
+ },
+ {
+  "name":"n_datecrea",
+  "aggregation":"SUM"
+ },
+ {
+  "name":"s_etage",
+  "aggregation":"SUM"
+ },
+ {
+  "name":"n_etage",
+  "aggregation":"SUM"
+ },
+ {
+  "name":"n_tuiles",
+  "aggregation":"SUM"
+ },
+ {
+  "name":"n_ardoises",
+  "aggregation":"SUM"
+ },
+ {
+  "name":"n_toits",
+  "aggregation":"SUM"
+ },
+ {
+  "name":"n_pierres",
+  "aggregation":"SUM"
+ },
+ {
+  "name":"n_meulieres",
+  "aggregation":"SUM"
+ },
+ {
+  "name":"n_betons",
+  "aggregation":"SUM"
+ },
+ {
+  "name":"n_briques",
+  "aggregation":"SUM"
+ },
+ {
+  "name":"n_bois",
+  "aggregation":"SUM"
+ },
+ {
+  "name":"n_agglo",
+  "aggregation":"SUM"
+ },
+ {
+  "name":"n_murs",
+  "aggregation":"SUM"
+ },
+ {
+  "name":"n_indus1",
+  "aggregation":"SUM"
+ },
+ {
+  "name":"n_indif1",
+  "aggregation":"SUM"
+ },
+ {
+  "name":"n_agr1",
+  "aggregation":"SUM"
+ },
+ {
+  "name":"n_res1",
+  "aggregation":"SUM"
+ },
+ {
+  "name":"n_ann1",
+  "aggregation":"SUM"
+ },
+ {
+  "name":"n_com1",
+  "aggregation":"SUM"
+ },
+ {
+  "name":"n_rel1",
+  "aggregation":"SUM"
+ },
+ {
+  "name":"n_sport1",
+  "aggregation":"SUM"
+ },
+ {
+  "name":"n_usage1",
+  "aggregation":"SUM"
+ },
+ {
+  "name":"n_indus2",
+  "aggregation":"SUM"
+ },
+ {
+  "name":"n_indif2",
+  "aggregation":"SUM"
+ },
+ {
+  "name":"n_agr2",
+  "aggregation":"SUM"
+ },
+ {
+  "name":"n_res2",
+  "aggregation":"SUM"
+ },
+ {
+  "name":"n_ann2",
+  "aggregation":"SUM"
+ },
+ {
+  "name":"n_com2",
+  "aggregation":"SUM"
+ },
+ {
+  "name":"n_rel2",
+  "aggregation":"SUM"
+ },
+ {
+  "name":"n_sport2",
+  "aggregation":"SUM"
+ },
+ {
+  "name":"n_usage2",
+  "aggregation":"SUM"
+ },
+ {
+  "name":"n",
+  "aggregation":"SUM"
+ }
+]    },
+    "scale_operations": [
+        [11, 1],
+        [10, 2],
+        [9, 2],
+        [8, 2],
+        [7, 2],
+	      [6, 2],
+	      [5,2],
+	      [4,2]
+    ],
+    "output": {
+        "layername": "grid_bati",
+        "format": "pbf",
+        "storage": "mbtiles",
+        "verbose": false,
+        "nbquantiles": 9
+    }
+}
+
+
+

@@ -1,0 +1,3 @@
+create table gridgeom as 
+  select ST_GeomFromText('Polygon(('||(x*200)::text||' '||(y*200)::text||','||(x*200)::text||' '||((y-1)*200)::text||','||((x+1)*200)::text||' '||((y-1)*200)::text||','||((x+1)*200)::text||' '||(y*200)::text||','||(x*200)::text||' '||(y*200)::text||'))',2154) as wkb_geometry, * 
+  from ( select SPLIT_PART(cid,'_',1)::integer as x, SPLIT_PART(cid,'_',2)::integer as y, * from grid as cg) as tc;

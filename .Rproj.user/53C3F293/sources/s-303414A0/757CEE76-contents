@@ -1,0 +1,4 @@
+./tippecanoe -z 15 -Z 12 -l bati -o bati_poly.mbtiles --drop-densest-as-needed 
+
+../bdtopo/BDTOPO_3-0_TOUSTHEMES_GPKG_LAMB93_D010_2021-03-15/BDTOPO/1_DONNEES_LIVRAISON_2021-04-00014/BDT_3-0_GPKG_LAMB93_D010-ED2021-03-15/bati_poly.geojson 
+
